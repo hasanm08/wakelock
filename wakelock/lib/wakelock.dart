@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/foundation.dart';
 import 'package:wakelock_platform_interface/wakelock_platform_interface.dart';
 
@@ -19,8 +17,8 @@ var wakelockPlatformInstance = _defaultPlatformInstance;
 /// As soon as https://github.com/flutter/flutter/issues/52267#issuecomment-792302417
 /// is available, this should be completely removed and both macOS & Windows
 /// should use `dartPluginClass` instead.
-WakelockPlatformInterface get _defaultPlatformInstance => WakelockPlatformInterface.instance;
-}
+WakelockPlatformInterface get _defaultPlatformInstance =>
+    WakelockPlatformInterface.instance;
 
 /// Class providing all wakelock functionality using static members.
 ///
